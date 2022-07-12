@@ -298,7 +298,7 @@ def sigint_handler(signal, frame):
     sys.exit(0)
 signal.signal(signal.SIGINT, sigint_handler)
 while True:
-	dir = "/var/www/html/playlist"
+	dir = "~/Desktop/playlist"
 	for songfiledir in glob.glob(dir + "/*"):
 	    name = songfiledir.split("/")[-1].removesuffix(".mp3").removesuffix(".wav")
 	    golbalCurrentName = name
